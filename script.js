@@ -12,30 +12,25 @@ menuBars.addEventListener("click",()=>{
 
         menuBars.classList.remove("mob"); 
         crossIcon.classList.add("mob");
-
-});
-menuBars.addEventListener("click",()=>{
         mainmenu[0].classList.add("active");
-});
-menuBars.addEventListener("click",()=>{
         overlay[0].classList.add("appear");
 });
+
 // cross icon status
 crossIcon.addEventListener("click",()=>{
         crossIcon.classList.remove("mob");
-        menuBars.classList.add("mob"); 
-});
-crossIcon.addEventListener("click",()=>{
-        mainmenu[0].classList.remove("active");
-});
-crossIcon.addEventListener("click",()=>{
+        menuBars.classList.add("mob");
+        mainmenu[0].classList.remove("active"); 
         overlay[0].classList.remove("appear");
+        overlay[0].style.zIndex=-1; 
 });
+// overlay fucutionality 
 overlay[0].addEventListener("click",()=>{
         mainmenu[0].classList.remove("active");
         overlay[0].classList.remove("appear");
         crossIcon.classList.remove("mob");
         menuBars.classList.add("mob"); 
+        overlay[0].style.zIndex=-1;
 })
 
 // 58F08C7B765()
