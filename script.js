@@ -9,7 +9,6 @@ let overlay= document.getElementsByClassName("overlay");
 console.log(menuBars);
 
 menuBars.addEventListener("click",()=>{
-
         menuBars.classList.remove("mob"); 
         crossIcon.classList.add("mob");
         mainmenu[0].classList.add("active");
@@ -22,7 +21,6 @@ crossIcon.addEventListener("click",()=>{
         menuBars.classList.add("mob");
         mainmenu[0].classList.remove("active"); 
         overlay[0].classList.remove("appear");
-        overlay[0].style.zIndex=-1; 
 });
 // overlay fucutionality 
 overlay[0].addEventListener("click",()=>{
@@ -30,7 +28,6 @@ overlay[0].addEventListener("click",()=>{
         overlay[0].classList.remove("appear");
         crossIcon.classList.remove("mob");
         menuBars.classList.add("mob"); 
-        overlay[0].style.zIndex=-1;
 })
 
 // 58F08C7B765()
